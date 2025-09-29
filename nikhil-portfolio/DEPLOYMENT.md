@@ -52,7 +52,4 @@ npx serve out
 
 ## 📝 Notes
 
-- The project is configured for static export
-- All images are unoptimized for static hosting
-- Trailing slashes are enabled for better compatibility
-- The favicon is embedded as a data URI
+
