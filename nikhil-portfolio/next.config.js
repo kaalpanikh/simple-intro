@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    runtime: 'edge'
-  },
+  output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true
   }

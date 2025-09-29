@@ -5,74 +5,54 @@
 ### Steps:
 1. **Push to GitHub:**
    ```bash
-   git init
    git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/your-repo-name.git
-   git push -u origin main
+   git commit -m "Add portfolio"
+   git push origin main
    ```
 
-2. **Deploy on Cloudflare Pages:**
+2. **Connect to Cloudflare Pages:**
    - Go to [Cloudflare Pages](https://pages.cloudflare.com/)
-   - Connect your GitHub account
-   - Select your repository
+   - Click "Connect to Git"
+   - Select your GitHub repository
    - Build settings:
      - **Framework preset**: Next.js
      - **Build command**: `npm run build`
      - **Build output directory**: `out`
-   - Click "Save and Deploy"
+     - **Root directory**: `/` (or leave empty)
 
-3. **Custom Domain (Optional):**
-   - Go to your project settings
-   - Add your custom domain
-   - Update DNS records as instructed
+3. **Deploy:**
+   - Click "Save and Deploy"
+   - Your site will be available at `https://your-project.pages.dev`
 
 ## 📄 GitHub Pages
 
 ### Steps:
-1. **Build for static export:**
+1. **Build the project:**
    ```bash
    npm run build
    ```
 
-2. **Push to GitHub:**
-   ```bash
-   git add .
-   git commit -m "Build for GitHub Pages"
-   git push
-   ```
+2. **Push the `out` folder:**
+   - The `out` folder contains static files
+   - Push this to a `gh-pages` branch or to the root of your repository
 
 3. **Enable GitHub Pages:**
-   - Go to repository Settings
-   - Scroll to "Pages" section
-   - Source: "Deploy from a branch"
-   - Branch: `gh-pages` (create this branch)
-   - Folder: `/ (root)`
+   - Go to repository Settings > Pages
+   - Select source: "Deploy from a branch"
+   - Choose `gh-pages` branch or `main` branch
+   - Your site will be at `https://yourusername.github.io/repository-name`
 
-4. **Create gh-pages branch:**
-   ```bash
-   git checkout -b gh-pages
-   git add out/
-   git commit -m "Deploy to GitHub Pages"
-   git push origin gh-pages
-   ```
+## 🔧 Local Testing
 
-## 🔧 Build Commands
-
+Test the static export locally:
 ```bash
-# Install dependencies
-npm install
-
-# Build for production
 npm run build
-
-# The static files will be in the 'out' directory
+npx serve out
 ```
 
 ## 📝 Notes
 
-- **Cloudflare Pages**: Better performance, easier setup
-- **GitHub Pages**: Free, but requires manual build process
-- **Custom Domain**: Works with both platforms
-- **SSL**: Automatically provided by both platforms
+- The project is configured for static export
+- All images are unoptimized for static hosting
+- Trailing slashes are enabled for better compatibility
+- The favicon is embedded as a data URI
