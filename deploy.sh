@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Rebuild LightningCSS to ensure native modules are properly installed
+echo "Rebuilding LightningCSS..."
+npm rebuild lightningcss
+
 # Build the project
 echo "Building the project..."
 npm run build
