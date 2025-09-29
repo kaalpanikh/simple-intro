@@ -2,6 +2,10 @@
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Inspired by Lee Robinson's design philosophy.
 
+## 🚀 Live Demo
+
+Visit: [https://kaalpanikh.github.io/simple-intro/](https://kaalpanikh.github.io/simple-intro/)
+
 ## Features
 
 - 🚀 **Modern Design**: Clean, minimalist design with excellent typography
@@ -17,7 +21,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Icons**: Heroicons
-- **Deployment**: Vercel (recommended)
+- **Deployment**: GitHub Pages
 
 ## Getting Started
 
@@ -30,8 +34,8 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/kaalpanikh/nikhil-portfolio.git
-cd nikhil-portfolio
+git clone https://github.com/kaalpanikh/simple-intro.git
+cd simple-intro
 ```
 
 2. Install dependencies:
@@ -50,8 +54,9 @@ npm run dev
 
 ```bash
 npm run build
-npm start
 ```
+
+This creates a static export in the `out` directory ready for deployment.
 
 ## Project Structure
 
@@ -91,20 +96,19 @@ The project uses Tailwind CSS. You can customize:
 
 ## Deployment
 
-### Vercel (Recommended)
+### GitHub Pages (Current Setup)
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
+This project is configured for GitHub Pages deployment:
 
-### Other Platforms
+1. **Automatic Deployment**: GitHub Actions automatically builds and deploys on every push to main
+2. **Manual Deployment**: Run `npm run build` and push the `out` folder contents to your repository
 
-The project can be deployed to any platform that supports Next.js:
+### GitHub Actions Workflow
 
-- Netlify
-- AWS Amplify
-- Railway
-- DigitalOcean App Platform
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that:
+- Builds the project on every push to main
+- Deploys the static files to GitHub Pages
+- Uses the `out` directory as the publish directory
 
 ## Performance
 
