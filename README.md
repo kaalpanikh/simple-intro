@@ -144,7 +144,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 - **Email**: nm30472@gmail.com
-- **LinkedIn**: [nikhil-mishra-392503306](https://linkedin.com/in/nikhil-mishra-392503306)
+- **LinkedIn**: [nikhil-mishra-392503306](https://www.linkedin.com/in/nikhil-mishra-392503306)
 - **GitHub**: [kaalpanikh](https://github.com/kaalpanikh)
 - **Twitter**: [@kaalpanikhitis](https://twitter.com/kaalpanikhitis)
 
