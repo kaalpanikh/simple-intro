@@ -96,9 +96,27 @@ The project uses Tailwind CSS. You can customize:
 
 ## Deployment
 
-### GitHub Pages (Current Setup)
+### Netlify (Recommended)
 
-This project is configured for GitHub Pages deployment:
+This project is optimized for Netlify deployment:
+
+1. **Quick Deploy**: 
+   - Run `npm run build`
+   - Drag and drop the `out` folder to [netlify.com](https://netlify.com)
+
+2. **Git Integration**:
+   - Push to GitHub
+   - Connect repository to Netlify
+   - Automatic deployments on every push
+
+3. **Configuration**: 
+   - `netlify.toml` file included
+   - Auto-detects build settings
+   - Node.js 18 environment
+
+### GitHub Pages (Alternative)
+
+This project also supports GitHub Pages deployment:
 
 1. **Automatic Deployment**: GitHub Actions automatically builds and deploys on every push to main
 2. **Manual Deployment**: Run `npm run build` and push the `out` folder contents to your repository
