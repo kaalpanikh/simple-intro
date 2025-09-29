@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center" style={{backgroundColor: '#1A1A1A'}}>
-      <div className="max-w-2xl mx-auto px-4 py-8 w-full sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-12">
+      <div className="max-w-2xl mx-auto px-3 py-6 w-full sm:px-4 sm:py-8 md:px-6 md:py-10 lg:px-8 lg:py-12">
         <h1 className="font-bold mb-6" style={{color: '#E8E8E8', fontSize: '2.5rem', lineHeight: '1.2', letterSpacing: '-0.02em'}}>Nikhil Mishra</h1>
         
         <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
