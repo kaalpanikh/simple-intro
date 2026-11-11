@@ -1,46 +1,84 @@
+import Link from 'next/link'
+import Bio from './bio'
+import Painting from './painting'
+import { notes } from '../content/notes'
+import { posts, projects } from '../content/site'
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center" style={{backgroundColor: '#1A1A1A'}}>
-      <div className="max-w-2xl mx-auto px-3 py-6 w-full sm:px-4 sm:py-8 md:px-6 md:py-10 lg:px-8 lg:py-12">
-        <h1 className="font-bold mb-6" style={{color: '#E8E8E8', fontSize: '2.5rem', lineHeight: '1.2', letterSpacing: '-0.02em'}}>Nikhil Mishra</h1>
-        
-        {/* Desktop content */}
-        <div className="hidden sm:block">
-          <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            I&apos;m a Site Reliability Engineer at <strong><a href="https://www.schbang.com" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Schbang</a></strong>, keeping production websites and platforms for 40+ enterprise brands fast, secure and online across 30+ cloud environments. 
-            Before that, I was a DevOps Engineer at <strong><a href="https://behooked.ai" style={{color: '#E8E8E8', textDecoration: 'underline'}}>BeHooked</a></strong>, and I worked at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong> as an SRE Intern during their cloud-to-bare-metal migration, 
-            building monitoring solutions that improved system reliability.
-          </p>
-          
-          <p className="mb-8" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            My life&apos;s work is to make technology reliable, scalable, and cost-effective. 
-            My favourite part of the job is taking a project from infra requirements to staging to production go-live, then keeping it running smoothly. 
-            Along the way I&apos;ve closed security audit findings, patched dozens of live servers with zero lasting downtime, and migrated monoliths to Kubernetes microservices. 
-            I&apos;ve built multiple DevOps projects following the roadmap, from Blue-Green deployments to Bastion host setups, 
-            and I write about infrastructure automation and system optimization.
-          </p>
-        </div>
+    <main className="site-shell">
+      <article className="content-frame">
+        <div className="home-layout">
+          <div className="home-copy">
+            <h1 className="site-title">
+              <a
+                href="https://github.com/kaalpanikh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="site-title-link"
+              >
+                <p className="content-paragraph">
+                  <span className="site-title-at">@</span>kaalpanikh
+                </p>
+              </a>
+            </h1>
 
-        {/* Mobile content - shorter and more concise */}
-        <div className="block sm:hidden">
-          <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            SRE at <strong>Schbang</strong>. Previously DevOps at <strong><a href="https://behooked.ai" style={{color: '#E8E8E8', textDecoration: 'underline'}}>BeHooked</a></strong> and SRE Intern at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong>.
-          </p>
-          
-          <p className="mb-8" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            I keep 40+ brands online and love the day prod goes live.
-          </p>
-        </div>
+            <Bio />
 
-        <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-          You can read my <a href="https://nikhilmishra.xyz" style={{color: '#E8E8E8', textDecoration: 'underline'}}>writing</a> or <a href="https://github.com/kaalpanikh" style={{color: '#E8E8E8', textDecoration: 'underline'}}>code</a>, or <a href="https://links.nikhilmishra.xyz" style={{color: '#E8E8E8', textDecoration: 'underline'}}>follow me online</a>. 
-          I also write about <a href="https://www.linkedin.com/in/nikhil-mishra-392503306" style={{color: '#E8E8E8', textDecoration: 'underline'}}>DevOps practices</a> and do <a href="https://github.com/kaalpanikh" style={{color: '#E8E8E8', textDecoration: 'underline'}}>open source</a>.
-        </p>
+            <div className="writing-index">
+              <section aria-labelledby="notes-heading">
+                <h2 id="notes-heading">Notes</h2>
+                <ul className="notes-list">
+                  {notes.map((note) => (
+                    <li key={note.slug}>
+                      <Link href={`/${note.slug}/`}>{note.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
 
-        <p style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-          <a href="mailto:nm30472@gmail.com" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Reach out if interested</a>.
-        </p>
+              <section aria-labelledby="blogs-heading">
+                <h2 id="blogs-heading">Blogs</h2>
+                <div className="blogs-list">
+                  {posts.map((post) => (
+                    <a key={post.url} className="blog-row" href={post.url} target="_blank" rel="noopener noreferrer">
+                      <span>{post.title}</span>
+                      <time>{post.date}</time>
+                    </a>
+                  ))}
+                </div>
+                <p className="all-posts">
+                  <a href="https://nikhilmishra.xyz" target="_blank" rel="noopener noreferrer">
+                    All posts →
+                  </a>
+                </p>
+              </section>
+
+              <section aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+                <div className="blogs-list">
+                  {projects.map((project) => (
+                    <a
+                      key={project.url}
+                      className="blog-row"
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>{project.title}</span>
+                      <span className="row-meta">{project.meta}</span>
+                    </a>
+                  ))}
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <aside className="home-visual">
+            <Painting />
+          </aside>
         </div>
-    </div>
+      </article>
+    </main>
   )
 }
