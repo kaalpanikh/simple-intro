@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import Bio from './bio'
 import Painting from './painting'
-import { notes } from '../content/notes'
 import { posts, projects } from '../content/site'
 
 export default function Home() {
@@ -26,17 +24,6 @@ export default function Home() {
             <Bio />
 
             <div className="writing-index">
-              <section aria-labelledby="notes-heading">
-                <h2 id="notes-heading">Notes</h2>
-                <ul className="notes-list">
-                  {notes.map((note) => (
-                    <li key={note.slug}>
-                      <Link href={`/${note.slug}/`}>{note.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-
               <section aria-labelledby="blogs-heading">
                 <h2 id="blogs-heading">Blogs</h2>
                 <div className="blogs-list">

@@ -38,16 +38,16 @@ function DefaultBio() {
     <>
       <p className="content-paragraph">
         I’m a site reliability engineer. I work at{' '}
-        <a href="https://www.schbang.com" target="_blank" rel="noopener noreferrer">
+        <a className="home-schbang-link" href="https://www.schbang.com" target="_blank" rel="noopener noreferrer">
           Schbang
         </a>
         , where I keep production websites and platforms for 40+ enterprise brands fast, secure and online.
         Previously, I was a DevOps engineer at{' '}
-        <a href="https://behooked.ai" target="_blank" rel="noopener noreferrer">
+        <a className="home-behooked-link" href="https://behooked.ai" target="_blank" rel="noopener noreferrer">
           BeHooked
         </a>{' '}
         and an SRE intern at{' '}
-        <a href="https://mydukaan.io" target="_blank" rel="noopener noreferrer">
+        <a className="home-dukaan-link" href="https://mydukaan.io" target="_blank" rel="noopener noreferrer">
           Dukaan
         </a>
         .
@@ -78,7 +78,7 @@ function LongBio() {
       </p>
       <p className="content-paragraph">
         My first real taste of production was an SRE internship at{' '}
-        <a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100" target="_blank" rel="noopener noreferrer">
+        <a className="home-dukaan-link" href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100" target="_blank" rel="noopener noreferrer">
           Dukaan
         </a>{' '}
         in 2023, during their move from the cloud to bare metal. I set up Grafana on top of the ELK stack so the
@@ -94,7 +94,7 @@ function LongBio() {
       </p>
       <p className="content-paragraph">
         At{' '}
-        <a href="https://behooked.ai" target="_blank" rel="noopener noreferrer">
+        <a className="home-behooked-link" href="https://behooked.ai" target="_blank" rel="noopener noreferrer">
           BeHooked
         </a>{' '}
         I was the DevOps engineer from July 2024 to March 2026. I built monitoring that tracked errors across 16
@@ -103,7 +103,7 @@ function LongBio() {
       </p>
       <p className="content-paragraph">
         Since March 2026 I’ve been an SRE at{' '}
-        <a href="https://www.schbang.com" target="_blank" rel="noopener noreferrer">
+        <a className="home-schbang-link" href="https://www.schbang.com" target="_blank" rel="noopener noreferrer">
           Schbang
         </a>
         , running 30+ cloud environments for 40+ brands across AWS, Azure, Cloudflare, DigitalOcean and E2E. I

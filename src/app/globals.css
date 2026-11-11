@@ -161,6 +161,35 @@ ul {
   opacity: 0.72;
 }
 
+/* Company cursors: hovering a place I worked shows its mark */
+.content-frame a.home-schbang-link {
+  cursor: url(/logos/schbang-mark.png) 12 12, pointer;
+  cursor: -webkit-image-set(url(/logos/schbang-mark.png) 1x, url(/logos/schbang-mark@2x.png) 2x) 12 12, pointer;
+}
+.content-frame a.home-behooked-link {
+  cursor: url(/logos/behooked-mark.png) 12 12, pointer;
+  cursor: -webkit-image-set(url(/logos/behooked-mark.png) 1x, url(/logos/behooked-mark@2x.png) 2x) 12 12, pointer;
+}
+.content-frame a.home-dukaan-link {
+  cursor: url(/logos/dukaan-mark.png) 12 12, pointer;
+  cursor: -webkit-image-set(url(/logos/dukaan-mark.png) 1x, url(/logos/dukaan-mark@2x.png) 2x) 12 12, pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  .content-frame a.home-schbang-link {
+    cursor: url(/logos/schbang-mark-on-dark.png) 12 12, pointer;
+    cursor: -webkit-image-set(url(/logos/schbang-mark-on-dark.png) 1x, url(/logos/schbang-mark-on-dark@2x.png) 2x) 12 12, pointer;
+  }
+  .content-frame a.home-behooked-link {
+    cursor: url(/logos/behooked-mark-on-dark.png) 12 12, pointer;
+    cursor: -webkit-image-set(url(/logos/behooked-mark-on-dark.png) 1x, url(/logos/behooked-mark-on-dark@2x.png) 2x) 12 12, pointer;
+  }
+  .content-frame a.home-dukaan-link {
+    cursor: url(/logos/dukaan-mark-on-dark.png) 12 12, pointer;
+    cursor: -webkit-image-set(url(/logos/dukaan-mark-on-dark.png) 1x, url(/logos/dukaan-mark-on-dark@2x.png) 2x) 12 12, pointer;
+  }
+}
+
 /* Home */
 .home-layout,
 .home-copy {
