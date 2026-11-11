@@ -4,6 +4,21 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Nikhil Mishra',
   description: 'I\'m Nikhil, a Site Reliability Engineer at Schbang keeping production infrastructure fast, secure and online.',
+  metadataBase: new URL('https://simple.nikhilmishra.xyz'),
+  openGraph: {
+    title: 'Nikhil Mishra',
+    description: 'Site Reliability Engineer at Schbang, keeping production infrastructure fast, secure and online.',
+    url: 'https://simple.nikhilmishra.xyz',
+    siteName: 'Nikhil Mishra',
+    images: [{ url: '/og.png', width: 1200, height: 627, alt: 'Nikhil Mishra, Site Reliability Engineer' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nikhil Mishra',
+    description: 'Site Reliability Engineer at Schbang, keeping production infrastructure fast, secure and online.',
+    images: ['/og.png'],
+  },
   icons: {
     icon: [
       {

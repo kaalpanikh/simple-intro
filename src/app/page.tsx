@@ -8,7 +8,7 @@ export default function Home() {
         <div className="hidden sm:block">
           <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
             I&apos;m a Site Reliability Engineer at <strong><a href="https://www.schbang.com" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Schbang</a></strong>, keeping production websites and platforms for 40+ enterprise brands fast, secure and online across 30+ cloud environments. 
-            Before that, I was a DevOps Engineer at <strong>BeHooked</strong>, and I worked at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong> as an SRE Intern during their cloud-to-bare-metal migration, 
+            Before that, I was a DevOps Engineer at <strong><a href="https://behooked.ai" style={{color: '#E8E8E8', textDecoration: 'underline'}}>BeHooked</a></strong>, and I worked at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong> as an SRE Intern during their cloud-to-bare-metal migration, 
             building monitoring solutions that improved system reliability.
           </p>
           
@@ -24,7 +24,7 @@ export default function Home() {
         {/* Mobile content - shorter and more concise */}
         <div className="block sm:hidden">
           <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            SRE at <strong>Schbang</strong>. Previously DevOps at <strong>BeHooked</strong> and SRE Intern at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong>.
+            SRE at <strong>Schbang</strong>. Previously DevOps at <strong><a href="https://behooked.ai" style={{color: '#E8E8E8', textDecoration: 'underline'}}>BeHooked</a></strong> and SRE Intern at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong>.
           </p>
           
           <p className="mb-8" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
