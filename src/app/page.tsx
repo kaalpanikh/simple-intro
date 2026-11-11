@@ -34,7 +34,7 @@ export default function Home() {
 
         <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
           You can read my <a href="https://nikhilmishra.xyz" style={{color: '#E8E8E8', textDecoration: 'underline'}}>writing</a> or <a href="https://github.com/kaalpanikh" style={{color: '#E8E8E8', textDecoration: 'underline'}}>code</a>, or <a href="https://links.nikhilmishra.xyz" style={{color: '#E8E8E8', textDecoration: 'underline'}}>follow me online</a>. 
-          I also write about <a href="https://www.linkedin.com/in/nikhil-mishra-392503306" style={{color: '#E8E8E8', textDecoration: 'underline'}}>DevOps practices</a>, <a href="https://iam.nikhilmishra.xyz" style={{color: '#E8E8E8', textDecoration: 'underline'}}>share resources</a>, and do <a href="https://github.com/kaalpanikh" style={{color: '#E8E8E8', textDecoration: 'underline'}}>open source</a>.
+          I also write about <a href="https://www.linkedin.com/in/nikhil-mishra-392503306" style={{color: '#E8E8E8', textDecoration: 'underline'}}>DevOps practices</a> and do <a href="https://github.com/kaalpanikh" style={{color: '#E8E8E8', textDecoration: 'underline'}}>open source</a>.
         </p>
 
         <p style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
