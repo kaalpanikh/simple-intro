@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Nikhil Mishra',
-  description: 'I\'m a developer and engineer. I work at Hooked teaching about DevOps.',
+  description: 'I\'m Nikhil, a Site Reliability Engineer at Schbang keeping production infrastructure fast, secure and online.',
   icons: {
     icon: [
       {

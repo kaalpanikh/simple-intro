@@ -7,14 +7,15 @@ export default function Home() {
         {/* Desktop content */}
         <div className="hidden sm:block">
           <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            I&apos;m a DevOps Engineer. I work at <strong>Hooked</strong> architecting cloud infrastructure and optimizing CI/CD pipelines. 
-            Previously, I worked at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong> as an SRE Intern during their cloud-to-bare-metal migration, 
+            I&apos;m a Site Reliability Engineer at <strong><a href="https://www.schbang.com" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Schbang</a></strong>, keeping production websites and platforms for 40+ enterprise brands fast, secure and online across 30+ cloud environments. 
+            Before that, I was a DevOps Engineer at <strong>BeHooked</strong>, and I worked at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong> as an SRE Intern during their cloud-to-bare-metal migration, 
             building monitoring solutions that improved system reliability.
           </p>
           
           <p className="mb-8" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
             My life&apos;s work is to make technology reliable, scalable, and cost-effective. 
-            I orchestrated migrations from monolithic apps to Kubernetes microservices, significantly reducing latency and costs. 
+            My favourite part of the job is taking a project from infra requirements to staging to production go-live, then keeping it running smoothly. 
+            Along the way I&apos;ve closed security audit findings, patched dozens of live servers with zero lasting downtime, and migrated monoliths to Kubernetes microservices. 
             I&apos;ve built multiple DevOps projects following the roadmap, from Blue-Green deployments to Bastion host setups, 
             and I write about infrastructure automation and system optimization.
           </p>
@@ -23,11 +24,11 @@ export default function Home() {
         {/* Mobile content - shorter and more concise */}
         <div className="block sm:hidden">
           <p className="mb-4" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            DevOps Engineer at <strong>Hooked</strong>. Previously SRE Intern at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong>.
+            SRE at <strong>Schbang</strong>. Previously DevOps at <strong>BeHooked</strong> and SRE Intern at <strong><a href="https://nikhilmishra.notion.site/SRE-INTERN-AT-DUKAAN-2d242bb787194466bfe3577b80735100?source=copy_link" style={{color: '#E8E8E8', textDecoration: 'underline'}}>Dukaan</a></strong>.
           </p>
           
           <p className="mb-8" style={{color: '#E8E8E8', fontSize: '1.125rem', lineHeight: '1.7'}}>
-            I make technology reliable and scalable. Built Kubernetes migrations and DevOps projects.
+            I keep 40+ brands online and love the day prod goes live.
           </p>
         </div>
 
