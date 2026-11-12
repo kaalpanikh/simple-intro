@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     'Site Reliability Engineer Mumbai',
   ],
   alternates: { canonical: '/' },
+  verification: { other: { 'msvalidate.01': 'A26A91C37E0E9CC6A9B0C0102E1D6BD1' } },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
   openGraph: {
     title: 'Nikhil Mishra – DevOps & Site Reliability Engineer',
