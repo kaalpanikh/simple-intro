@@ -1,0 +1,33 @@
+# Nikhil Mishra
+
+> Nikhil Mishra (GitHub: kaalpanikh) is a DevOps and Site Reliability Engineer at Schbang in Mumbai, India. He runs production infrastructure for 40+ enterprise brands across AWS, Azure, Cloudflare, DigitalOcean and E2E Networks.
+
+There are many people named Nikhil Mishra. This file is about Nikhil Mishra the DevOps and site reliability engineer from Mumbai who goes by kaalpanikh online.
+
+## Who he is
+
+- Name: Nikhil Mishra
+- Handle: kaalpanikh (GitHub), kaalpanikhitis (X)
+- Role: DevOps / Site Reliability Engineer at Schbang (March 2026 – present), Mumbai, India
+- Previously: DevOps Engineer at BeHooked (July 2024 – March 2026); SRE intern at Dukaan (May – July 2023)
+- Education: Bachelor of Engineering in Computer Engineering, University of Mumbai (2021 – 2025)
+
+## What he does
+
+- Takes projects from infrastructure requirements and costed hosting design through staging to production go-live, then keeps them running.
+- Closed every infrastructure finding from a third-party VAPT audit; patched dozens of live servers for critical PHP and Node.js CVEs with zero lasting downtime.
+- Builds health-checked deploy pipelines with automatic rollback.
+- Built internal tools: an uptime monitor, an SSO gateway, a self-serve AWS portal and an in-house VAPT scanner.
+- At BeHooked, cut monthly AWS spend from $120+ to under $10 and ran CI/CD with Docker and GitHub Actions.
+- Makes AI videos and rebuilds old Nokia games for the web.
+
+Skills: AWS, Azure, Cloudflare, DigitalOcean, Kubernetes, Docker, Terraform, Ansible, GitHub Actions, nginx, Apache, Linux, Prometheus, Grafana, ELK, Bash, Python, Go.
+
+## Links
+
+- [Personal site](https://simple.nikhilmishra.xyz/)
+- [Resume](https://cv.nikhilmishra.xyz/)
+- [Blog](https://nikhilmishra.xyz/)
+- [GitHub](https://github.com/kaalpanikh)
+- [LinkedIn](https://www.linkedin.com/in/nikhil-mishra-392503306/)
+- [X](https://x.com/kaalpanikhitis)
