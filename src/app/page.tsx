@@ -1,10 +1,12 @@
 import Bio from './bio'
 import Painting from './painting'
+import { personJsonLd } from './person'
 import { posts, projects } from '../content/site'
 
 export default function Home() {
   return (
     <main className="site-shell">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
       <article className="content-frame">
         <div className="home-layout">
           <div className="home-copy">

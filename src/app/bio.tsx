@@ -37,7 +37,7 @@ function DefaultBio() {
   return (
     <>
       <p className="content-paragraph">
-        I’m a site reliability engineer. I work at{' '}
+        I’m Nikhil Mishra, a DevOps and site reliability engineer. I work at{' '}
         <a className="home-schbang-link" href="https://www.schbang.com" target="_blank" rel="noopener noreferrer">
           Schbang
         </a>
